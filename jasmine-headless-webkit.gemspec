@@ -20,9 +20,9 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency 'jasmine-core'
+  s.add_runtime_dependency 'jasmine-core', '< 2'
   s.add_runtime_dependency 'coffee-script'
-  s.add_runtime_dependency 'rainbow'
+  s.add_runtime_dependency 'rainbow', '< 2'
   s.add_runtime_dependency 'multi_json', '>= 1.2.0'
   s.add_runtime_dependency 'sprockets'
   s.add_runtime_dependency 'sprockets-vendor_gems'
